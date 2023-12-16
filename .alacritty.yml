@@ -1,0 +1,23 @@
+font:
+  normal:
+    family: Iosevka Fixed
+    style: regular
+  size: 11
+colors:
+  primary:
+    background: '#000000'
+  normal:
+    black: '#000000'
+  bright:
+    black: '#303030'
+window:
+  opacity: 1
+  padding:
+    x: 10
+    y: 10
+cursor:
+  style:
+    shape: Underline
+draw_bold_text_with_bright_colors: true
+shell:
+  program: /usr/bin/fish
