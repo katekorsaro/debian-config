@@ -1,5 +1,5 @@
 *
 !.gitignore
-!/.config/
+!.config/
 !.alacritty
-!/scripts/
+!scripts/
