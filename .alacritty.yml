@@ -2,14 +2,14 @@ font:
   normal:
     family: Iosevka Fixed
     style: regular
-  size: 11
+  size: 10
 colors:
   primary:
     background: '#000000'
   normal:
     black: '#000000'
   bright:
-    black: '#303030'
+    black: '#363636'
 window:
   opacity: 1
   padding:
