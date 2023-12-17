@@ -1,0 +1,23 @@
+#! /bin/bash
+
+# This script changes wallpaper for:
+#  current user
+#  lightdm
+#  grub
+# Thus it meant te be run as root
+
+# directory cleaninig
+rm -f /usr/share/themes/wallpapers/current-wallpaper.png
+
+# copy new wallpaper to a known filename
+cp $1 /usr/share/themes/wallpapers/current-wallpaper.png
+
+# set the current wallpaper
+feh --bg-fill /usr/share/themes/wallpapers/current-wallpaper.png
+
+#ensure lightdm background
+sed -i.bak -r "s_^background=.*_background=/usr/share/themes/wallpapers/current-wallpaper.png_" /etc/lightdm/lightdm-gtk-greeter.conf
+
+# ensure
+sed -i.bak s_BACKGROUND.*_BACKGROUND="/usr/share/themes/wallpapers/current-wallpaper.png"_g /etc/default/grub
+update-grub
