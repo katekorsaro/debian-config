@@ -1,3 +1,3 @@
 #! /bin/sh
 notify-send -t 5000 "Attention please..." "Brace yourself, another meeting is coming!" 2> /dev/null &
-mpg123 -q /home/davide/scripts/click-124467.mp3 2> /dev/null &
+mpg123 -q $HOME/scripts/click-124467.mp3 2> /dev/null &
