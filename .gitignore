@@ -6,6 +6,7 @@
 !/.config/mc/
 /.config/mc/ini
 !/.config/ncspot/
+/.config/ncspot/userstate.cbor
 !/.config/nvim/
 !/.config/zellij/
 
