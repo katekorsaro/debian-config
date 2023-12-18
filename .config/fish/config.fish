@@ -4,6 +4,7 @@ if status is-interactive
 
 	set SHELL '/usr/bin/fish'
 
+	abbr -a sn	"sudo shutdown now"
 	abbr -a al	"at -f ~/scripts/play-alarm"
 	abbr -a atq	"clear && at -l | sort -t\" \" -k4 -k5 -k6"
 	abbr -a bc	"clear && bacon"
@@ -40,5 +41,6 @@ if status is-interactive
 	abbr -a rl	"clear && source ~/.config/fish/config.fish"
 	abbr -a ssc	"sudo systemctl"
 	abbr -a tlp	"sudo tlp start"
-	abbr -a zl	"clear && zellij"
+	abbr -a zl	"clear && zellij -l ~/.config/zellij/standard.layout.kdl"
+	abbr -a zlr	"clear && zellij -l ~/.config/zellij/rust.layout.kdl"
 end
