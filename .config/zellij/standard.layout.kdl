@@ -4,10 +4,13 @@ layout {
 			plugin location="zellij:compact-bar"
 		}
 		pane split_direction="vertical" {
-			pane size="35%" name="Sidebar"
-			pane size="65%" stacked=true {
-				pane name="Command Area"
-				pane command="mc" name="Working Area" focus=true
+			pane size="30%" stacked=true {
+				pane name="Background"
+				pane name="Sidebar"
+			}
+			pane size="70%" stacked=true {
+				pane name="Sandbox"
+				pane name="File Manager" command="mc" name="Working Area" focus=true
 			}
 		}
 		pane size=1 borderless=true {

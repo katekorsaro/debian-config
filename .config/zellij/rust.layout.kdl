@@ -7,7 +7,7 @@ layout {
 			pane size="35%" name="Test Area" command="bacon" args="test"
 			pane size="65%" stacked=true {
 				pane name="Command Area"
-				pane command="mc" name="Working Area" focus=true
+				pane cwd="src" command="mc" name="Working Area" focus=true
 			}
 		}
 		pane size=1 borderless=true {

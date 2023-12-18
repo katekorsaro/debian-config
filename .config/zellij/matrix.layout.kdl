@@ -1,0 +1,15 @@
+layout name="matrix" {
+	pane_template name="matrix" command="cmatrix" borderless=true {
+		args "-abu 7"
+	}
+	
+	pane_template name="matrix-sandwich" split_direction="vertical" {
+		matrix size="15%"
+		children
+		matrix size="15%"
+	}
+	
+	matrix-sandwich {
+		pane borderless=true focus=true
+	}
+}
