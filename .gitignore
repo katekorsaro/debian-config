@@ -1,6 +1,14 @@
 /*
 
 !/.config/
+/.config/*
+!/.config/qtile/
+!/.config/mc/
+/.config/mc/ini
+!/.config/ncspot/
+!/.config/nvim/
+!/.config/zellij/
+
 !/scripts/
 
 !.alacritty
