@@ -2,7 +2,7 @@ font:
   normal:
     family: Iosevka Fixed
     style: regular
-  size: 14
+  size: 11
 colors:
   primary:
     background: '#000000'

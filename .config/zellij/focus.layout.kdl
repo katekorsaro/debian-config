@@ -1,7 +1,8 @@
-layout {
+layout name="Focus" {
 	pane split_direction="vertical" {
-		pane size="80" split_direction="horizontal" {
-			pane borderless=true command="btop" args="-p 2"
+		pane size=90 {
+			pane name="ncspot" command="ncspot"
+			pane name="btop" borderless=true command="btop" args="-p 2" size=24
 		}
 		pane focus=true
 	}
