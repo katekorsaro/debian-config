@@ -1,0 +1,8 @@
+layout {
+	pane split_direction="vertical" {
+		pane size="80" split_direction="horizontal" {
+			pane borderless=true command="btop" args="-p 2"
+		}
+		pane focus=true
+	}
+}

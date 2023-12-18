@@ -42,5 +42,6 @@ if status is-interactive
 	abbr -a ssc	"sudo systemctl"
 	abbr -a tlp	"sudo tlp start"
 	abbr -a zl	"clear && zellij -l ~/.config/zellij/standard.layout.kdl"
+	abbr -a zlf	"clear && zellij -l ~/.config/zellij/focus.layout.kdl"
 	abbr -a zlr	"clear && zellij -l ~/.config/zellij/rust.layout.kdl"
 end
