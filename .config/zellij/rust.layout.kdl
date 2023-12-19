@@ -4,10 +4,10 @@ layout {
 			plugin location="zellij:compact-bar"
 		}
 		pane split_direction="vertical" {
-			pane size="35%" name="Test Area" command="bacon" {
+			pane size="30%" name="Test Area" command="bacon" {
 				args "test"
 			}
-			pane size="65%" stacked=true {
+			pane size="70%" stacked=true {
 				pane name="Command Area"
 				pane cwd="backlog" name="Backlog" command="mc"
 				pane cwd="src" command="mc" name="Working Area" focus=true
