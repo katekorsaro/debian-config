@@ -4,7 +4,6 @@ if status is-interactive
 
 	set SHELL '/usr/bin/fish'
 
-	abbr -a sn	"sudo shutdown now"
 	abbr -a al	"at -f ~/scripts/play-alarm"
 	abbr -a atq	"clear && at -l | sort -t\" \" -k4 -k5 -k6"
 	abbr -a bc	"clear && bacon"
@@ -17,6 +16,7 @@ if status is-interactive
 	abbr -a env	"clear && env | sort"
 	abbr -a ga	"clear && git add ."
 	abbr -a gc	"clear && git commit -m"
+	abbr -a gd	"clear && git diff"
 	abbr -a git	"clear && git"
 	abbr -a gits	'clear && git add . && date +"%a %d/%m/%Y %H:%M" | xargs -I {} git commit -m "WIP: {}"'
 	abbr -a gl	"clear && git log"
@@ -39,6 +39,7 @@ if status is-interactive
 	abbr -a pt	"sudo powertop --auto-tune"
 	abbr -a rf	"clear && ls -R *.rs | xargs -I {} rustfmt {}"
 	abbr -a rl	"clear && source ~/.config/fish/config.fish"
+	abbr -a sn	"sudo shutdown now"
 	abbr -a ssc	"sudo systemctl"
 	abbr -a tlp	"sudo tlp start"
 	abbr -a zl	"clear && zellij -l ~/.config/zellij/standard.layout.kdl"

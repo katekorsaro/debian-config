@@ -1,14 +1,18 @@
 /*
 
 !/.config/
+
 /.config/*
+
+!/.config/fish/
 !/.config/qtile/
 !/.config/mc/
 /.config/mc/ini
-!/.config/ncspot/
-/.config/ncspot/userstate.cbor
 !/.config/nvim/
 !/.config/zellij/
+
+!/.config/ncspot/
+/.config/ncspot/userstate.cbor
 
 !/scripts/
 
