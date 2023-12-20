@@ -138,7 +138,7 @@ layouts = [
 
 widget_defaults = dict(
     font="VictorMono Nerd Font",
-    fontsize=30,
+    fontsize=28,
     padding=6,
 )
 extension_defaults = widget_defaults.copy()
@@ -174,7 +174,7 @@ screens = [
                 # clock
                 widget.Clock(foreground=bar_text_color, format="  %a %d/%m/%y %H:%M:%S"),
             ],
-            48,
+            42,
             background="#000000",
         ),
     ),
