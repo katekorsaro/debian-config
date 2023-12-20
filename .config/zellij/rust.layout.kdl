@@ -1,14 +1,24 @@
 layout {
-	tab name="Main" {
-		pane split_direction="vertical" {
-			pane size="30%" name="Test Area" command="bacon" {
-				args "test"
-			}
-			pane size="70%" stacked=true {
-				pane cwd="src" command="mc" name="Working Area" focus=true
-				pane cwd="backlog" name="Backlog" command="mc"
-				pane name="Command Area"
-			}
-		}
-	}
+    tab name="Main" {
+        pane split_direction="vertical" {
+
+            pane size="30%" name="Test Area" command="bacon" {
+                args "test"
+            }
+
+            pane size="70%" stacked=true {
+
+                pane  name="Working Area" focus=true {
+                    command "ranger"
+                        args "./src"
+                }
+
+                pane name="Backlog" command="ranger" {
+                    args "./backlog"
+                }
+
+                pane name="Command Area"
+            }
+        }
+    }
 }

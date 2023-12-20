@@ -1,14 +1,17 @@
 layout {
-	tab name="Home" {
-		pane split_direction="vertical" {
-			pane size="30%" stacked=true {
-				pane name="Background"
-				pane name="Sidebar"
-			}
-			pane size="70%" stacked=true {
-				pane name="Sandbox"
-				pane name="File Manager" command="mc" name="Working Area" focus=true
-			}
-		}
-	}
+    tab name="Home" {
+
+        pane split_direction="vertical" {
+
+                pane size="30%" stacked=true {
+                    pane name="Background"
+                    pane name="Sidebar"
+                }
+
+                pane size="70%" stacked=true {
+                pane name="Sandbox"
+                pane name="File Manager" command="ranger" name="Working Area" focus=true
+            }
+        }
+    }
 }
