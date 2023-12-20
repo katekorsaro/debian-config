@@ -10,6 +10,7 @@
 /.config/mc/ini
 !/.config/nvim/
 !/.config/zellij/
+!/.config/ranger/
 
 !/.config/ncspot/
 /.config/ncspot/userstate.cbor
