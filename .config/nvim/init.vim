@@ -27,6 +27,7 @@ inoremap ( ()<left>
 inoremap () ()
 inoremap ) ()
 inoremap <BS> <BS><ESC>zza
+inoremap <C-o><C-o> <C-O>
 inoremap <CR> <CR><SPACE><ESC>zza<BS>
 inoremap <DOWN> <DOWN><ESC>^zz
 inoremap <ESC> <ESC>zz

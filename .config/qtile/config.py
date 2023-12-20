@@ -137,7 +137,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Iosevka Fixed",
+    font="VictorMono Nerd Font",
     fontsize=30,
     padding=6,
 )
@@ -154,13 +154,13 @@ screens = [
                 # other indicators
                 widget.Spacer(),
                 # widget.Battery(foreground=bar_text_color, fmt=" {}", format="{percent:2.0%} {hour}:{min:02d} {watt:.2f}", update_interval=10, charge_char="", discharge_char="", full_char="", low_background='FF6600', low_foreground='000000', low_percentage=0.25),
-                widget.Battery(foreground=bar_text_color, fmt=" {}", format="{percent:2.2%} {hour}:{min:02d}", update_interval=2, charge_char="", discharge_char="", full_char="", low_background='FF6600', low_foreground='000000', low_percentage=0.25),
+                widget.Battery(foreground=bar_text_color, fmt="  {}", format="{percent:2.2%} {hour}:{min:02d}", update_interval=2, charge_char="", discharge_char="", full_char="", low_background='FF6600', low_foreground='000000', low_percentage=0.25),
                 widget.Sep(),
                 widget.Backlight(foreground=bar_text_color, backlight_name="intel_backlight", format=" {percent:2.0%}"),
                 widget.Sep(),
-                widget.Volume(foreground=bar_text_color, fmt=" {}"),
+                widget.Volume(foreground=bar_text_color, fmt="  {}"),
                 widget.Sep(),
-                widget.KeyboardLayout(fmt=" {}", foreground=bar_text_color),
+                widget.KeyboardLayout(fmt="  {}", foreground=bar_text_color),
 
                 # widget.Spacer(),
                 # widget.CPU(foreground=bar_text_color),
@@ -172,7 +172,7 @@ screens = [
                 widget.Spacer(),
 
                 # clock
-                widget.Clock(foreground=bar_text_color, format=" %a %d/%m/%y %H:%M:%S"),
+                widget.Clock(foreground=bar_text_color, format="  %a %d/%m/%y %H:%M:%S"),
             ],
             48,
             background="#000000",

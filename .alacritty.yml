@@ -1,8 +1,8 @@
 font:
   normal:
-    family: Iosevka Fixed
+    family: VictorMono Nerd Font
     style: regular
-  size: 11
+  size: 10
 colors:
   primary:
     background: '#000000'
