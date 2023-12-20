@@ -8,9 +8,9 @@ layout {
 				args "test"
 			}
 			pane size="70%" stacked=true {
-				pane name="Command Area"
-				pane cwd="backlog" name="Backlog" command="mc"
 				pane cwd="src" command="mc" name="Working Area" focus=true
+				pane cwd="backlog" name="Backlog" command="mc"
+				pane name="Command Area"
 			}
 		}
 		pane size=1 borderless=true {
