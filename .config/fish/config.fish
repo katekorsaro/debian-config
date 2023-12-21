@@ -23,7 +23,7 @@ if status is-interactive
 	abbr -a gp	"clear && git push"
 	abbr -a gr	"clear && git reset"
 	abbr -a gs	"clear && git status"
-	abbr -a ip 	"ip -c"
+	abbr -a ip 	"clear && ip -c"
 	abbr -a la	"clear && lsd -la"
 	abbr -a ll	"clear && lsd -l"
 	abbr -a ln2	"links2"
