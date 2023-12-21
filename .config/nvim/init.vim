@@ -5,6 +5,10 @@ set list
 set foldmethod=indent
 set foldlevel=99
 set nowrap
+set textwidth=100
+set expandtab
+set tabstop=4
+set shiftwidth=4
 
 colorscheme elflord
 
@@ -110,6 +114,8 @@ nnoremap <M-q> :q<CR>
 nnoremap <M-s> :w<CR>
 nnoremap <PAGEDOWN> <PAGEDOWN>^zz
 nnoremap <PAGEUP> <PAGEUP>^zz
+nnoremap <S-Tab> V<
+nnoremap <Tab> V>
 nnoremap <UP> <UP>^zz
 nnoremap G Gzz^
 nnoremap N Nzz
@@ -136,6 +142,8 @@ vnoremap <M-LEFT> <
 vnoremap <M-RIGHT> >
 vnoremap <PAGEDOWN> <PAGEDOWN>zz
 vnoremap <PAGEUP> <PAGEUP>zz
+vnoremap <S-Tab> <
+vnoremap <Tab> >
 vnoremap <UP> <UP>zz
 vnoremap G Gzz
 vnoremap [ xi[]<ESC>hpl
