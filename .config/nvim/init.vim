@@ -9,18 +9,16 @@ set textwidth=100
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set cursorline
+set scrolloff=0
+set lazyredraw
 
 colorscheme elflord
 
-set cursorline
 highlight CursorLine cterm=bold term=bold ctermbg=8
 highlight CursorLineNR cterm=bold ctermfg=15 ctermbg=8
 highlight LineNR ctermfg=8
 highlight MatchParen cterm=bold ctermbg=9 ctermfg=15
-
-set scrolloff=0
-
-set lazyredraw
 
 inoremap " ""<left>
 inoremap "" ""
@@ -84,6 +82,7 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O<SPACE><ESC>zzA<BS>
 inoremap {} {}
 inoremap } {}
+
 nnoremap % %zz
 nnoremap 'a 'a^zz
 nnoremap 'b 'b^zz
@@ -131,6 +130,7 @@ nnoremap p pzz
 nnoremap u uzz
 nnoremap { {zz
 nnoremap } }zz
+
 vnoremap " xi""<ESC>hpl
 vnoremap ( xi()<ESC>hpl
 vnoremap * xi**<ESC>hpl
