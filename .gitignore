@@ -12,6 +12,11 @@
 !/.config/zellij/
 !/.config/ranger/
 
+.config/qtile/__pycache__/
+.config/qtile/autostart.sh
+.config/ranger/colorschemes/__pycache__/
+
+
 !/.config/ncspot/
 /.config/ncspot/userstate.cbor
 
