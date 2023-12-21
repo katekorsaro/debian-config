@@ -44,8 +44,8 @@ class MyDefault(ColorScheme):
                     any((context.media, context.container,
                          context.fifo, context.socket)):
                 attr |= bold
-                fg = magenta
-                fg += BRIGHT
+                fg = 208
+                # fg += BRIGHT
             if context.socket:
                 attr |= bold
                 fg = magenta
