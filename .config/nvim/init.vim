@@ -131,8 +131,8 @@ nnoremap u uzz
 nnoremap { {zz
 nnoremap } }zz
 
-vnoremap " xi""<ESC>hpl
-vnoremap ( xi()<ESC>hpl
+vnoremap "" xi""<ESC>hpl
+vnoremap (( xi()<ESC>hpl
 vnoremap * xi**<ESC>hpl
 vnoremap ** xi****<ESC>2hp2l
 vnoremap ++ "+
@@ -147,8 +147,10 @@ vnoremap <Tab> >
 vnoremap <UP> <UP>zz
 vnoremap G Gzz
 vnoremap [ xi[]<ESC>hpl
+vnoremap [[ xi[]<ESC>hpl
 vnoremap j jzz
 vnoremap k kzz
 vnoremap y yzz
 vnoremap { xi{}<ESC>hpl
 vnoremap {{ xi{<CR>}<ESC>PkV%>V<%V<
+vnoremap {{ xi{}<ESC>hpl
