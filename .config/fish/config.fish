@@ -21,6 +21,7 @@ if status is-interactive
 	abbr -a gits	'clear && git add . && date +"%a %d/%m/%Y %H:%M" | xargs -I {} git commit -m "WIP: {}"'
 	abbr -a gl	"clear && git log"
 	abbr -a gp	"clear && git push"
+	abbr -a gr	"clear && git reset"
 	abbr -a gs	"clear && git status"
 	abbr -a ip 	"ip -c"
 	abbr -a la	"clear && lsd -la"
