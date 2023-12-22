@@ -2,7 +2,7 @@ font:
   normal:
     family: VictorMono Nerd Font
     style: regular
-  size: 10
+  size: 9
 colors:
   primary:
     background: '#000000'
