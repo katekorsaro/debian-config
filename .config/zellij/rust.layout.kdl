@@ -1,23 +1,23 @@
 layout {
-    tab name="Main" {
+    tab name="Scrapyard" {
         pane split_direction="vertical" {
 
-            pane size="30%" name="Test Area" command="bacon" {
+            pane size="30%" name="Lab" command="bacon" {
                 args "test"
             }
 
             pane size="70%" stacked=true {
 
-                pane  name="Working Area" focus=true {
+                pane  name="Building Site" focus=true {
                     command "ranger"
                         args "./src"
                 }
 
-                pane name="Backlog" command="ranger" {
+                pane name="Office" command="ranger" {
                     args "./backlog"
                 }
 
-                pane name="Command Area"
+                pane name="Headquarter"
             }
         }
     }
