@@ -9,7 +9,7 @@ colors:
   normal:
     black: '#000000'
   bright:
-    black: '#363636'
+    black: '#404040'
 window:
   opacity: 1
   padding:
