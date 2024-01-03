@@ -141,9 +141,9 @@ vnoremap <DOWN> <DOWN>zz
 vnoremap <LEADER>(( c()<ESC>Pa
 vnoremap <LEADER>[[ c[]<ESC>Pa
 vnoremap <LEADER>{{ c{}<ESC>Pa
-vnoremap <LEADER>)) xi(<CR>)<ESC>PVi(
-vnoremap <LEADER>]] xi[<CR>]<ESC>PVi[
-vnoremap <LEADER>}} xi{<CR>}<ESC>PVi{
+vnoremap <LEADER>)) xi(<CR>)<ESC>PVi(=Vi(
+vnoremap <LEADER>]] xi[<CR>]<ESC>PVi[=Vi[
+vnoremap <LEADER>}} xi{<CR>}<ESC>PVi{=Vi{
 vnoremap <PAGEDOWN> <PAGEDOWN>zz
 vnoremap <PAGEUP> <PAGEUP>zz
 vnoremap <S-Tab> <gv
