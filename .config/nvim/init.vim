@@ -1,17 +1,18 @@
+set cursorline
+set expandtab
+set foldlevel=99
+set foldmethod=indent
+set ignorecase
+set lazyredraw
+set list
+set nohlsearch
+set nowrap
 set number
 set rnu
-set ignorecase
-set list
-set foldmethod=indent
-set foldlevel=99
-set nowrap
-set textwidth=100
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set cursorline
 set scrolloff=0
-set lazyredraw
+set shiftwidth=4
+set tabstop=4
+set textwidth=100
 
 colorscheme elflord
 
@@ -78,6 +79,8 @@ inoremap [ []<left>
 inoremap [] []
 inoremap \|\| \|x\|<SPACE>
 inoremap ] []
+inoremap jk <ESC>
+inoremap kj <ESC>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O<SPACE><ESC>zzA<BS>
 inoremap {} {}
@@ -117,6 +120,8 @@ nnoremap <S-Tab> V<
 nnoremap <Tab> V>
 nnoremap <UP> <UP>^zz
 nnoremap G Gzz^
+nnoremap J :m .+1<CR>==zz
+nnoremap K :m .-2<CR>==zz
 nnoremap N Nzz
 nnoremap O O<SPACE><ESC>zzxa
 nnoremap cc ^C
@@ -131,26 +136,22 @@ nnoremap u uzz
 nnoremap { {zz
 nnoremap } }zz
 
-vnoremap "" xi""<ESC>hpl
-vnoremap (( xi()<ESC>hpl
-vnoremap * xi**<ESC>hpl
-vnoremap ** xi****<ESC>2hp2l
 vnoremap ++ "+
-vnoremap < xi<><ESC>hpl
 vnoremap <DOWN> <DOWN>zz
-vnoremap <M-LEFT> <
-vnoremap <M-RIGHT> >
+vnoremap <LEADER>(( c()<ESC>Pa
+vnoremap <LEADER>[[ c[]<ESC>Pa
+vnoremap <LEADER>{{ c{}<ESC>Pa
+vnoremap <LEADER>)) xi(<CR>)<ESC>PVi(
+vnoremap <LEADER>]] xi[<CR>]<ESC>PVi[
+vnoremap <LEADER>}} xi{<CR>}<ESC>PVi{
 vnoremap <PAGEDOWN> <PAGEDOWN>zz
 vnoremap <PAGEUP> <PAGEUP>zz
-vnoremap <S-Tab> <
-vnoremap <Tab> >
+vnoremap <S-Tab> <gv
+vnoremap <Tab> >gv
 vnoremap <UP> <UP>zz
 vnoremap G Gzz
-vnoremap [ xi[]<ESC>hpl
-vnoremap [[ xi[]<ESC>hpl
+vnoremap J :m '>+1<CR>gv=gvzz
+vnoremap K :m '<-2<CR>gv=gvzz
 vnoremap j jzz
 vnoremap k kzz
 vnoremap y yzz
-vnoremap { xi{}<ESC>hpl
-vnoremap {{ xi{<CR>}<ESC>PkV%>V<%V<
-vnoremap {{ xi{}<ESC>hpl
