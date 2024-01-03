@@ -20,7 +20,8 @@ bar_text_color = "#AAAAAA"
 keys = [
     # Browsers
     Key([mod], "p", lazy.spawn("brave-browser"), desc="Brave"),
-    Key([mod], "o", lazy.spawn("thunar"), desc="Thunar file manager"),
+    Key([mod], "o", lazy.spawn("brave-browser --incognito"), desc="Brave Incognito"),
+    Key([mod], "i", lazy.spawn("thunar"), desc="Thunar file manager"),
 
     # Volume
     Key([mod], "F6", lazy.spawn("amixer set Master 5%+"), desc="Volume up"),
