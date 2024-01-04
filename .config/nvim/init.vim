@@ -135,6 +135,8 @@ nnoremap p pzz
 nnoremap u uzz
 nnoremap { {zz
 nnoremap } }zz
+nnoremap <C-y> ggVG
+nnoremap <C-c> "+y
 
 vnoremap ++ "+
 vnoremap <DOWN> <DOWN>zz
