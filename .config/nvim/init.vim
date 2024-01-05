@@ -1,3 +1,4 @@
+" Default switches and flags
 set cursorline
 set expandtab
 set foldlevel=99
@@ -14,13 +15,14 @@ set shiftwidth=4
 set tabstop=4
 set textwidth=100
 
+" Theme and colors
 colorscheme elflord
-
 highlight CursorLine cterm=bold term=bold ctermbg=8
 highlight CursorLineNR cterm=bold ctermfg=15 ctermbg=8
 highlight LineNR ctermfg=8
 highlight MatchParen cterm=bold ctermbg=9 ctermfg=15
 
+" Insert mode remap
 inoremap " ""<left>
 inoremap "" ""
 inoremap ' ''<left>
@@ -31,6 +33,7 @@ inoremap () ()
 inoremap ) ()
 inoremap <BS> <BS><ESC>zza
 inoremap <C-o><C-o> <C-O>
+inoremap <C-w> <ESC>ggVGgwgg
 inoremap <CR> <CR><SPACE><ESC>zza<BS>
 inoremap <DOWN> <DOWN><ESC>^zz
 inoremap <ESC> <ESC>zz
@@ -70,6 +73,7 @@ inoremap <M-s><M-t> struct  {<CR>}<ESC>k7li
 inoremap <M-t><M-s> #[test]<ESC>ofn  () {<CR>}<ESC>kzzt(i
 inoremap <M-t><M-t> todo!();<ESC>hi
 inoremap <M-u><M-u> use ;<ESC>i
+inoremap <M-w> <ESC>:w !sudo tee %<CR>a
 inoremap <M-}> <SPACE>-><SPACE>
 inoremap <M-}><M-}> <SPACE>=><SPACE>
 inoremap <PAGEDOWN> <PAGEDOWN><ESC>^zz
@@ -86,6 +90,7 @@ inoremap {<CR> {<CR>}<ESC>O<SPACE><ESC>zzA<BS>
 inoremap {} {}
 inoremap } {}
 
+" Normal mode remap
 nnoremap % %zz
 nnoremap 'a 'a^zz
 nnoremap 'b 'b^zz
@@ -96,6 +101,9 @@ nnoremap ( (zz
 nnoremap ) )zz
 nnoremap * *zz
 nnoremap ++ "+
+nnoremap <C-c> "+y
+nnoremap <C-w> ggVGgwgg
+nnoremap <C-y> ggVG
 nnoremap <DOWN> <DOWN>^zz
 nnoremap <LEADER>l :tabe ~/.config/nvim/init.vim<CR>
 nnoremap <LEADER>rl :source ~/.config/nvim/init.vim<CR>
@@ -114,6 +122,7 @@ nnoremap <M-o> o<ESC>zz
 nnoremap <M-p> O<ESC>zz
 nnoremap <M-q> :q<CR>
 nnoremap <M-s> :w<CR>
+nnoremap <M-w> :w !sudo tee %<CR>
 nnoremap <PAGEDOWN> <PAGEDOWN>^zz
 nnoremap <PAGEUP> <PAGEUP>^zz
 nnoremap <S-Tab> V<
@@ -122,11 +131,12 @@ nnoremap <UP> <UP>^zz
 nnoremap G Gzz^
 nnoremap J :m .+1<CR>==zz
 nnoremap K :m .-2<CR>==zz
+nnoremap M M^
 nnoremap N Nzz
 nnoremap O O<SPACE><ESC>zzxa
 nnoremap cc ^C
 nnoremap dd ddzz
-nnoremap gg ggM^
+nnoremap gg gg^
 nnoremap j j^zz
 nnoremap k k^zz
 nnoremap n nzz
@@ -135,9 +145,8 @@ nnoremap p pzz
 nnoremap u uzz
 nnoremap { {zz
 nnoremap } }zz
-nnoremap <C-y> ggVG
-nnoremap <C-c> "+y
 
+" Visual mode remap
 vnoremap ++ "+
 vnoremap <DOWN> <DOWN>zz
 vnoremap <LEADER>(( c()<ESC>Pa
