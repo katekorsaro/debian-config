@@ -31,12 +31,13 @@ if status is-interactive
     abbr -a lt    "clear && lsd -lt"
     abbr -a mc    "clear && mc"
     abbr -a mx    cmatrix -abu 5
+    abbr -a nf  "clear && sudo nala fetch"
     abbr -a ni    "clear && sudo nala install"
     abbr -a nn    "clear && nordvpn"
     abbr -a nq    "apt list | awk '{print \$1}' FS=/ | fzf | xargs -I {} nala show {}"
     abbr -a nr    "clear && sudo nala remove"
-    abbr -a nu    "clear && sudo nala upgrade"
     abbr -a ns  "clear && nala search"
+    abbr -a nu    "clear && sudo nala upgrade"
     abbr -a nv    nvim
     abbr -a nvf    "nvim ~/.config/fish/config.fish"
     abbr -a pandoc    "clear && pandoc"
@@ -49,4 +50,5 @@ if status is-interactive
     abbr -a zl    "clear && zellij -l ~/.config/zellij/standard.layout.kdl"
     abbr -a zlf    "clear && zellij -l ~/.config/zellij/focus.layout.kdl"
     abbr -a zlr    "clear && zellij -l ~/.config/zellij/rust.layout.kdl"
+
 end
