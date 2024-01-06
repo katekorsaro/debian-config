@@ -58,5 +58,5 @@ function fish_prompt
 end
 
 function fish_right_prompt
-    echo (set_color brgreen) $PWD
+    echo (set_color -o brgreen) $PWD
 end
