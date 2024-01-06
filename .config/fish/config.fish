@@ -54,9 +54,9 @@ if status is-interactive
 end
 
 function fish_prompt
-    string join '' -- (set_color brred) '' (set_color bryellow) '' (set_color brgreen) ' '
+    string join '' -- (set_color brpurple) '' (set_color brcyan) '' (set_color brgreen) ' '
 end
 
 function fish_right_prompt
-    echo (set_color green) $PWD
+    echo (set_color brgreen) $PWD
 end
