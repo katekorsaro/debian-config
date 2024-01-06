@@ -52,3 +52,11 @@ if status is-interactive
     abbr -a zlr    "clear && zellij -l ~/.config/zellij/rust.layout.kdl"
 
 end
+
+function fish_prompt
+    string join '' -- (set_color red) '' (set_color yellow) '' (set_color green) ' '
+end
+
+function fish_right_prompt
+    echo (set_color green) $PWD
+end
