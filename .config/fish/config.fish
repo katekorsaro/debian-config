@@ -54,7 +54,7 @@ if status is-interactive
 end
 
 function fish_prompt
-    string join '' -- (set_color red) '' (set_color yellow) '' (set_color green) ' '
+    string join '' -- (set_color brred) '' (set_color bryellow) '' (set_color brgreen) ' '
 end
 
 function fish_right_prompt
