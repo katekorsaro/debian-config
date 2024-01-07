@@ -102,6 +102,7 @@ nnoremap ) )zz
 nnoremap * *zz
 nnoremap ++ "+
 nnoremap <C-c> "+y
+nnoremap <C-c><C-c> ggVG"+ygg
 nnoremap <C-w> ggVGgwgg
 nnoremap <C-y> ggVG
 nnoremap <DOWN> <DOWN>^zz
