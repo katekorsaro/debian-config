@@ -1,6 +1,5 @@
 if status is-interactive
     fish_config theme choose "Nord"
-    fish_config prompt choose nim
 
     set SHELL '/usr/bin/fish'
 
@@ -34,6 +33,7 @@ if status is-interactive
     abbr -a nf  "clear && sudo nala fetch"
     abbr -a ni    "clear && sudo nala install"
     abbr -a nn    "clear && nordvpn"
+    abbr -a np "sudo nala purge"
     abbr -a nq    "apt list | awk '{print \$1}' FS=/ | fzf | xargs -I {} nala show {}"
     abbr -a nr    "clear && sudo nala remove"
     abbr -a ns  "clear && nala search"
