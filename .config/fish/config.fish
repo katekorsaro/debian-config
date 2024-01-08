@@ -30,6 +30,7 @@ if status is-interactive
     abbr -a lt    "clear && lsd -lt"
     abbr -a mc    "clear && mc"
     abbr -a mx    cmatrix -abu 5
+    abbr -a nb  "clear && newsboat -r"
     abbr -a nf  "clear && sudo nala fetch"
     abbr -a ni    "clear && sudo nala install"
     abbr -a nn    "clear && nordvpn"
