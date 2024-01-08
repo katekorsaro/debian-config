@@ -91,6 +91,8 @@ inoremap {} {}
 inoremap } {}
 
 " Normal mode remap
+nnoremap <LEADER>tw :set textwidth=100<CR>
+nnoremap <LEADER>wt :set textwidth=100000<CR>
 nnoremap % %zz
 nnoremap 'a 'a^zz
 nnoremap 'b 'b^zz
@@ -101,10 +103,10 @@ nnoremap ( (zz
 nnoremap ) )zz
 nnoremap * *zz
 nnoremap ++ "+
-nnoremap <C-c> "+y
-nnoremap <C-c><C-c> ggVG"+ygg
-nnoremap <C-w> ggVGgwgg
-nnoremap <C-y> ggVG
+nnoremap <LEADER>c "+y
+nnoremap <LEADER>cc ggVG"+ygg
+nnoremap <LEADER>w ggVGgwgg
+nnoremap <LEADER>y ggVGzz
 nnoremap <DOWN> <DOWN>^zz
 nnoremap <LEADER>l :tabe ~/.config/nvim/init.vim<CR>
 nnoremap <LEADER>rl :source ~/.config/nvim/init.vim<CR>
@@ -150,11 +152,12 @@ nnoremap } }zz
 " Visual mode remap
 vnoremap ++ "+
 vnoremap <DOWN> <DOWN>zz
-vnoremap <LEADER>(( c()<ESC>Pa
+vnoremap <LEADER>(( c()<ESC>Pa<ESC>
 vnoremap <LEADER>)) xi(<CR>)<ESC>PVi(=Vi(
-vnoremap <LEADER>[[ c[]<ESC>Pa
+vnoremap <LEADER>** c**<ESC>Pa<ESC>
+vnoremap <LEADER>[[ c[]<ESC>Pa<ESC>
 vnoremap <LEADER>]] xi[<CR>]<ESC>PVi[=Vi[
-vnoremap <LEADER>{{ c{}<ESC>Pa
+vnoremap <LEADER>{{ c{}<ESC>Pa<ESC>
 vnoremap <LEADER>}} xi{<CR>}<ESC>PVi{=Vi{
 vnoremap <PAGEDOWN> <PAGEDOWN>zz
 vnoremap <PAGEUP> <PAGEUP>zz
@@ -164,6 +167,7 @@ vnoremap <UP> <UP>zz
 vnoremap G Gzz
 vnoremap J :m '>+1<CR>gv=gvzz
 vnoremap K :m '<-2<CR>gv=gvzz
+vnoremap \j J
 vnoremap j jzz
 vnoremap k kzz
 vnoremap y yzz
