@@ -1,0 +1,14 @@
+color article             white   black
+color background          white   black
+color info                green  black   bold
+
+color listfocus           black green   bold
+color listfocus_unread    black green   bold
+
+color listnormal          white   black
+color listnormal_unread   green black
+
+feed-sort-order unreadarticlecount-asc
+
+bind-key j next
+bind-key k prev
