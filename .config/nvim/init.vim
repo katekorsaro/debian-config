@@ -91,8 +91,6 @@ inoremap {} {}
 inoremap } {}
 
 " Normal mode remap
-nnoremap <LEADER>tw :set textwidth=100<CR>
-nnoremap <LEADER>wt :set textwidth=100000<CR>
 nnoremap % %zz
 nnoremap 'a 'a^zz
 nnoremap 'b 'b^zz
@@ -103,13 +101,15 @@ nnoremap ( (zz
 nnoremap ) )zz
 nnoremap * *zz
 nnoremap ++ "+
-nnoremap <LEADER>c "+y
-nnoremap <LEADER>cc ggVG"+ygg
-nnoremap <LEADER>w ggVGgwgg
-nnoremap <LEADER>y ggVGzz
 nnoremap <DOWN> <DOWN>^zz
 nnoremap <LEADER>l :tabe ~/.config/nvim/init.vim<CR>
+nnoremap <LEADER>mt Vip:! pandoc -t markdown-simple_tables<CR>
 nnoremap <LEADER>rl :source ~/.config/nvim/init.vim<CR>
+nnoremap <LEADER>tw :set textwidth=100<CR>
+nnoremap <LEADER>w ggVGgwgg
+nnoremap <LEADER>wt :set textwidth=100000<CR>
+nnoremap <LEADER>y ggVGzz
+nnoremap <LEADER>yy ggVG"+ygg
 nnoremap <M-/> 0i// <ESC>
 nnoremap <M-Q> :q!<CR>
 nnoremap <M-c><M-b> <esc>:! cargo build<cr>
