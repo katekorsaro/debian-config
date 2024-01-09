@@ -30,7 +30,8 @@ if status is-interactive
     abbr -a lt    "clear && lsd -lt"
     abbr -a mc    "clear && mc"
     abbr -a mx    cmatrix -abu 5
-    abbr -a nb  "clear && newsboat -r"
+    abbr -a nb  "clear && newsboat"
+    abbr -a nbr  "newsboat -x reload &"
     abbr -a nf  "clear && sudo nala fetch"
     abbr -a ni    "clear && sudo nala install"
     abbr -a nn    "clear && nordvpn"
@@ -51,6 +52,11 @@ if status is-interactive
     abbr -a zl    "clear && zellij -l ~/.config/zellij/standard.layout.kdl"
     abbr -a zlf    "clear && zellij -l ~/.config/zellij/focus.layout.kdl"
     abbr -a zlr    "clear && zellij -l ~/.config/zellij/rust.layout.kdl"
+
+    abbr -a r24 "cvlc http://shoutcast.radio24.it:8000/listen.pls"
+    abbr -a rai1    "cvlc http://icestreaming.rai.it/1.mp3"
+    abbr -a rai2    "cvlc http://icestreaming.rai.it/2.mp3"
+    abbr -a rai3    "cvlc http://icestreaming.rai.it/3.mp3"
 
 end
 
